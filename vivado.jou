@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Nov 28 01:37:30 2019
+# Process ID: 13936
+# Current directory: C:/Xilinx/Projects/MicroMips
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9948 C:\Xilinx\Projects\MicroMips\MicroMips.xpr
+# Log file: C:/Xilinx/Projects/MicroMips/vivado.log
+# Journal file: C:/Xilinx/Projects/MicroMips\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Xilinx/Projects/MicroMips/MicroMips.xpr
+launch_simulation -simset [get_filesets mySimulation ]
+open_wave_config C:/Xilinx/Projects/MicroMips/MicroMipsSimulation.wcfg
+source TestBench.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim

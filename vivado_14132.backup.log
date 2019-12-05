@@ -1,0 +1,525 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Nov 27 23:54:33 2019
+# Process ID: 14132
+# Current directory: C:/Xilinx/Projects/MicroMips
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7444 C:\Xilinx\Projects\MicroMips\MicroMips.xpr
+# Log file: C:/Xilinx/Projects/MicroMips/vivado.log
+# Journal file: C:/Xilinx/Projects/MicroMips\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Xilinx/Projects/MicroMips/MicroMips.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:28 ; elapsed = 00:00:37 . Memory (MB): peak = 786.738 ; gain = 220.508
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/InstructionMemory.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/ControlUnit.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataPath.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/InstructionMemory.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/ControlUnit.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataPath.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+launch_simulation -simset [get_filesets mySimulation ]
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Xilinx/Projects/MicroMips/MicroMips.sim/mySimulation/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'mySimulation'
+INFO: [SIM-utils-54] Inspecting design source files for 'TestBench' in fileset 'mySimulation'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'mySimulation'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Xilinx/Projects/MicroMips/MicroMips.sim/mySimulation/behav/xsim'
+"xvhdl --incr --relax -prj TestBench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/ControlUnit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ControlUnit'
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 815.477 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Xilinx/Projects/MicroMips/MicroMips.sim/mySimulation/behav/xsim'
+"xelab -wto e1a8fb56e06e48a99b2f40cb207590bf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TestBench_behav xil_defaultlib.TestBench -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto e1a8fb56e06e48a99b2f40cb207590bf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TestBench_behav xil_defaultlib.TestBench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.micromipspkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.ControlUnit [controlunit_default]
+Compiling architecture behavioral of entity xil_defaultlib.DataPath [datapath_default]
+Compiling architecture behavioral of entity xil_defaultlib.InstructionMemory [instructionmemory_default]
+Compiling architecture behavioral of entity xil_defaultlib.DataMemory [datamemory_default]
+Compiling architecture behavioral of entity xil_defaultlib.MicroMips [micromips_default]
+Compiling architecture rtl of entity xil_defaultlib.testbench
+Built simulation snapshot TestBench_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 815.477 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Xilinx/Projects/MicroMips/MicroMips.sim/mySimulation/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TestBench_behav -key {Behavioral:mySimulation:Functional:TestBench} -tclbatch {TestBench.tcl} -view {C:/Xilinx/Projects/MicroMips/MicroMipsSimulation.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+open_wave_config C:/Xilinx/Projects/MicroMips/MicroMipsSimulation.wcfg
+source TestBench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+xsim: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 827.059 ; gain = 10.898
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TestBench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+launch_simulation: Time (s): cpu = 00:00:17 ; elapsed = 00:00:33 . Memory (MB): peak = 827.059 ; gain = 17.125
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Xilinx/Projects/MicroMips/MicroMips.sim/mySimulation/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'mySimulation'
+INFO: [SIM-utils-54] Inspecting design source files for 'TestBench' in fileset 'mySimulation'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'mySimulation'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Xilinx/Projects/MicroMips/MicroMips.sim/mySimulation/behav/xsim'
+"xvhdl --incr --relax -prj TestBench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataPath.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DataPath'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Xilinx/Projects/MicroMips/MicroMips.sim/mySimulation/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Xilinx/Projects/MicroMips/MicroMips.sim/mySimulation/behav/xsim'
+"xelab -wto e1a8fb56e06e48a99b2f40cb207590bf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TestBench_behav xil_defaultlib.TestBench -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto e1a8fb56e06e48a99b2f40cb207590bf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TestBench_behav xil_defaultlib.TestBench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.micromipspkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.ControlUnit [controlunit_default]
+Compiling architecture behavioral of entity xil_defaultlib.DataPath [datapath_default]
+Compiling architecture behavioral of entity xil_defaultlib.InstructionMemory [instructionmemory_default]
+Compiling architecture behavioral of entity xil_defaultlib.DataMemory [datamemory_default]
+Compiling architecture behavioral of entity xil_defaultlib.MicroMips [micromips_default]
+Compiling architecture rtl of entity xil_defaultlib.testbench
+Built simulation snapshot TestBench_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 853.961 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 853.961 ; gain = 0.000
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 853.961 ; gain = 0.000
+save_wave_config {C:/Xilinx/Projects/MicroMips/MicroMipsSimulation.wcfg}
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Xilinx/Projects/MicroMips/MicroMips.sim/mySimulation/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'mySimulation'
+INFO: [SIM-utils-54] Inspecting design source files for 'TestBench' in fileset 'mySimulation'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'mySimulation'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Xilinx/Projects/MicroMips/MicroMips.sim/mySimulation/behav/xsim'
+"xvhdl --incr --relax -prj TestBench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/ControlUnit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ControlUnit'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Xilinx/Projects/MicroMips/MicroMips.sim/mySimulation/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Xilinx/Projects/MicroMips/MicroMips.sim/mySimulation/behav/xsim'
+"xelab -wto e1a8fb56e06e48a99b2f40cb207590bf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TestBench_behav xil_defaultlib.TestBench -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto e1a8fb56e06e48a99b2f40cb207590bf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TestBench_behav xil_defaultlib.TestBench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.micromipspkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.ControlUnit [controlunit_default]
+Compiling architecture behavioral of entity xil_defaultlib.DataPath [datapath_default]
+Compiling architecture behavioral of entity xil_defaultlib.InstructionMemory [instructionmemory_default]
+Compiling architecture behavioral of entity xil_defaultlib.DataMemory [datamemory_default]
+Compiling architecture behavioral of entity xil_defaultlib.MicroMips [micromips_default]
+Compiling architecture rtl of entity xil_defaultlib.testbench
+Built simulation snapshot TestBench_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 854.492 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 854.492 ; gain = 0.000
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 854.492 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Xilinx/Projects/MicroMips/MicroMips.sim/mySimulation/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'mySimulation'
+INFO: [SIM-utils-54] Inspecting design source files for 'TestBench' in fileset 'mySimulation'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'mySimulation'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Xilinx/Projects/MicroMips/MicroMips.sim/mySimulation/behav/xsim'
+"xvhdl --incr --relax -prj TestBench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/InstructionMemory.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'InstructionMemory'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Xilinx/Projects/MicroMips/MicroMips.sim/mySimulation/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Xilinx/Projects/MicroMips/MicroMips.sim/mySimulation/behav/xsim'
+"xelab -wto e1a8fb56e06e48a99b2f40cb207590bf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TestBench_behav xil_defaultlib.TestBench -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto e1a8fb56e06e48a99b2f40cb207590bf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TestBench_behav xil_defaultlib.TestBench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.micromipspkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.ControlUnit [controlunit_default]
+Compiling architecture behavioral of entity xil_defaultlib.DataPath [datapath_default]
+Compiling architecture behavioral of entity xil_defaultlib.InstructionMemory [instructionmemory_default]
+Compiling architecture behavioral of entity xil_defaultlib.DataMemory [datamemory_default]
+Compiling architecture behavioral of entity xil_defaultlib.MicroMips [micromips_default]
+Compiling architecture rtl of entity xil_defaultlib.testbench
+Built simulation snapshot TestBench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 854.492 ; gain = 0.000
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/InstructionMemory.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/ControlUnit.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataPath.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Xilinx/Projects/MicroMips/MicroMips.sim/mySimulation/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'mySimulation'
+INFO: [SIM-utils-54] Inspecting design source files for 'TestBench' in fileset 'mySimulation'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'mySimulation'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Xilinx/Projects/MicroMips/MicroMips.sim/mySimulation/behav/xsim'
+"xvhdl --incr --relax -prj TestBench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/ControlUnit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ControlUnit'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/InstructionMemory.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'InstructionMemory'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Xilinx/Projects/MicroMips/MicroMips.sim/mySimulation/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Xilinx/Projects/MicroMips/MicroMips.sim/mySimulation/behav/xsim'
+"xelab -wto e1a8fb56e06e48a99b2f40cb207590bf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TestBench_behav xil_defaultlib.TestBench -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto e1a8fb56e06e48a99b2f40cb207590bf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TestBench_behav xil_defaultlib.TestBench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.micromipspkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.ControlUnit [controlunit_default]
+Compiling architecture behavioral of entity xil_defaultlib.DataPath [datapath_default]
+Compiling architecture behavioral of entity xil_defaultlib.InstructionMemory [instructionmemory_default]
+Compiling architecture behavioral of entity xil_defaultlib.DataMemory [datamemory_default]
+Compiling architecture behavioral of entity xil_defaultlib.MicroMips [micromips_default]
+Compiling architecture rtl of entity xil_defaultlib.testbench
+Built simulation snapshot TestBench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 854.492 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Xilinx/Projects/MicroMips/MicroMips.sim/mySimulation/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'mySimulation'
+INFO: [SIM-utils-54] Inspecting design source files for 'TestBench' in fileset 'mySimulation'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'mySimulation'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Xilinx/Projects/MicroMips/MicroMips.sim/mySimulation/behav/xsim'
+"xvhdl --incr --relax -prj TestBench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/ControlUnit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ControlUnit'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Xilinx/Projects/MicroMips/MicroMips.sim/mySimulation/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Xilinx/Projects/MicroMips/MicroMips.sim/mySimulation/behav/xsim'
+"xelab -wto e1a8fb56e06e48a99b2f40cb207590bf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TestBench_behav xil_defaultlib.TestBench -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto e1a8fb56e06e48a99b2f40cb207590bf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TestBench_behav xil_defaultlib.TestBench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3219] choice 'sula2' is already covered [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/ControlUnit.vhd:118]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit testbench in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Xilinx/Projects/MicroMips/MicroMips.sim/mySimulation/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Xilinx/Projects/MicroMips/MicroMips.sim/mySimulation/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Xilinx/Projects/MicroMips/MicroMips.sim/mySimulation/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'mySimulation'
+INFO: [SIM-utils-54] Inspecting design source files for 'TestBench' in fileset 'mySimulation'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'mySimulation'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Xilinx/Projects/MicroMips/MicroMips.sim/mySimulation/behav/xsim'
+"xvhdl --incr --relax -prj TestBench_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Xilinx/Projects/MicroMips/MicroMips.sim/mySimulation/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Xilinx/Projects/MicroMips/MicroMips.sim/mySimulation/behav/xsim'
+"xelab -wto e1a8fb56e06e48a99b2f40cb207590bf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TestBench_behav xil_defaultlib.TestBench -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto e1a8fb56e06e48a99b2f40cb207590bf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TestBench_behav xil_defaultlib.TestBench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3219] choice 'sula2' is already covered [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/ControlUnit.vhd:118]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit testbench in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Xilinx/Projects/MicroMips/MicroMips.sim/mySimulation/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Xilinx/Projects/MicroMips/MicroMips.sim/mySimulation/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Xilinx/Projects/MicroMips/MicroMips.sim/mySimulation/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'mySimulation'
+INFO: [SIM-utils-54] Inspecting design source files for 'TestBench' in fileset 'mySimulation'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'mySimulation'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Xilinx/Projects/MicroMips/MicroMips.sim/mySimulation/behav/xsim'
+"xvhdl --incr --relax -prj TestBench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/ControlUnit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ControlUnit'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Xilinx/Projects/MicroMips/MicroMips.sim/mySimulation/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Xilinx/Projects/MicroMips/MicroMips.sim/mySimulation/behav/xsim'
+"xelab -wto e1a8fb56e06e48a99b2f40cb207590bf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TestBench_behav xil_defaultlib.TestBench -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto e1a8fb56e06e48a99b2f40cb207590bf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TestBench_behav xil_defaultlib.TestBench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.micromipspkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.ControlUnit [controlunit_default]
+Compiling architecture behavioral of entity xil_defaultlib.DataPath [datapath_default]
+Compiling architecture behavioral of entity xil_defaultlib.InstructionMemory [instructionmemory_default]
+Compiling architecture behavioral of entity xil_defaultlib.DataMemory [datamemory_default]
+Compiling architecture behavioral of entity xil_defaultlib.MicroMips [micromips_default]
+Compiling architecture rtl of entity xil_defaultlib.testbench
+Built simulation snapshot TestBench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 914.500 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Xilinx/Projects/MicroMips/MicroMips.sim/mySimulation/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'mySimulation'
+INFO: [SIM-utils-54] Inspecting design source files for 'TestBench' in fileset 'mySimulation'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'mySimulation'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Xilinx/Projects/MicroMips/MicroMips.sim/mySimulation/behav/xsim'
+"xvhdl --incr --relax -prj TestBench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/ControlUnit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ControlUnit'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Xilinx/Projects/MicroMips/MicroMips.sim/mySimulation/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Xilinx/Projects/MicroMips/MicroMips.sim/mySimulation/behav/xsim'
+"xelab -wto e1a8fb56e06e48a99b2f40cb207590bf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TestBench_behav xil_defaultlib.TestBench -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto e1a8fb56e06e48a99b2f40cb207590bf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TestBench_behav xil_defaultlib.TestBench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.micromipspkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.ControlUnit [controlunit_default]
+Compiling architecture behavioral of entity xil_defaultlib.DataPath [datapath_default]
+Compiling architecture behavioral of entity xil_defaultlib.InstructionMemory [instructionmemory_default]
+Compiling architecture behavioral of entity xil_defaultlib.DataMemory [datamemory_default]
+Compiling architecture behavioral of entity xil_defaultlib.MicroMips [micromips_default]
+Compiling architecture rtl of entity xil_defaultlib.testbench
+Built simulation snapshot TestBench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 914.500 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Xilinx/Projects/MicroMips/MicroMips.sim/mySimulation/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'mySimulation'
+INFO: [SIM-utils-54] Inspecting design source files for 'TestBench' in fileset 'mySimulation'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'mySimulation'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Xilinx/Projects/MicroMips/MicroMips.sim/mySimulation/behav/xsim'
+"xvhdl --incr --relax -prj TestBench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/ControlUnit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ControlUnit'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Xilinx/Projects/MicroMips/MicroMips.sim/mySimulation/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Xilinx/Projects/MicroMips/MicroMips.sim/mySimulation/behav/xsim'
+"xelab -wto e1a8fb56e06e48a99b2f40cb207590bf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TestBench_behav xil_defaultlib.TestBench -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto e1a8fb56e06e48a99b2f40cb207590bf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TestBench_behav xil_defaultlib.TestBench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.micromipspkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.ControlUnit [controlunit_default]
+Compiling architecture behavioral of entity xil_defaultlib.DataPath [datapath_default]
+Compiling architecture behavioral of entity xil_defaultlib.InstructionMemory [instructionmemory_default]
+Compiling architecture behavioral of entity xil_defaultlib.DataMemory [datamemory_default]
+Compiling architecture behavioral of entity xil_defaultlib.MicroMips [micromips_default]
+Compiling architecture rtl of entity xil_defaultlib.testbench
+Built simulation snapshot TestBench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 914.500 ; gain = 0.000
+save_wave_config {C:/Xilinx/Projects/MicroMips/MicroMipsSimulation.wcfg}
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Xilinx/Projects/MicroMips/MicroMips.sim/mySimulation/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'mySimulation'
+INFO: [SIM-utils-54] Inspecting design source files for 'TestBench' in fileset 'mySimulation'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'mySimulation'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Xilinx/Projects/MicroMips/MicroMips.sim/mySimulation/behav/xsim'
+"xvhdl --incr --relax -prj TestBench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/ControlUnit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ControlUnit'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Xilinx/Projects/MicroMips/MicroMips.sim/mySimulation/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Xilinx/Projects/MicroMips/MicroMips.sim/mySimulation/behav/xsim'
+"xelab -wto e1a8fb56e06e48a99b2f40cb207590bf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TestBench_behav xil_defaultlib.TestBench -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto e1a8fb56e06e48a99b2f40cb207590bf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TestBench_behav xil_defaultlib.TestBench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.micromipspkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.ControlUnit [controlunit_default]
+Compiling architecture behavioral of entity xil_defaultlib.DataPath [datapath_default]
+Compiling architecture behavioral of entity xil_defaultlib.InstructionMemory [instructionmemory_default]
+Compiling architecture behavioral of entity xil_defaultlib.DataMemory [datamemory_default]
+Compiling architecture behavioral of entity xil_defaultlib.MicroMips [micromips_default]
+Compiling architecture rtl of entity xil_defaultlib.testbench
+Built simulation snapshot TestBench_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 914.500 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 914.500 ; gain = 0.000
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 914.500 ; gain = 0.000
+save_wave_config {C:/Xilinx/Projects/MicroMips/MicroMipsSimulation.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 28 01:31:55 2019...

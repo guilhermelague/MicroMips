@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Nov  6 09:49:25 2019
+# Process ID: 8152
+# Current directory: C:/Xilinx/Projects/MicroMips/MicroMips.runs/synth_1
+# Command line: vivado.exe -log MicroMips.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source MicroMips.tcl
+# Log file: C:/Xilinx/Projects/MicroMips/MicroMips.runs/synth_1/MicroMips.vds
+# Journal file: C:/Xilinx/Projects/MicroMips/MicroMips.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source MicroMips.tcl -notrace

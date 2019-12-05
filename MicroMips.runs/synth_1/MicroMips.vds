@@ -1,0 +1,809 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Nov  6 09:49:25 2019
+# Process ID: 8152
+# Current directory: C:/Xilinx/Projects/MicroMips/MicroMips.runs/synth_1
+# Command line: vivado.exe -log MicroMips.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source MicroMips.tcl
+# Log file: C:/Xilinx/Projects/MicroMips/MicroMips.runs/synth_1/MicroMips.vds
+# Journal file: C:/Xilinx/Projects/MicroMips/MicroMips.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source MicroMips.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:15 . Memory (MB): peak = 372.641 ; gain = 90.770
+Command: synth_design -top MicroMips -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 492 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 826.676 ; gain = 177.965
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'MicroMips' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/MicroMips.vhd:32]
+INFO: [Synth 8-3491] module 'ControlUnit' declared at 'C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/ControlUnit.vhd:25' bound to instance 'control_unit' of component 'ControlUnit' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/MicroMips.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'ControlUnit' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/ControlUnit.vhd:46]
+WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/ControlUnit.vhd:55]
+WARNING: [Synth 8-614] signal 'zero' is read in the process but is not in the sensitivity list [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/ControlUnit.vhd:136]
+INFO: [Synth 8-256] done synthesizing module 'ControlUnit' (1#1) [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/ControlUnit.vhd:46]
+INFO: [Synth 8-3491] module 'DataPath' declared at 'C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataPath.vhd:27' bound to instance 'data_path' of component 'DataPath' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/MicroMips.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'DataPath' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataPath.vhd:50]
+WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataPath.vhd:68]
+WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataPath.vhd:101]
+WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataPath.vhd:133]
+WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataPath.vhd:147]
+WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataPath.vhd:172]
+WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataPath.vhd:186]
+WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataPath.vhd:206]
+INFO: [Synth 8-256] done synthesizing module 'DataPath' (2#1) [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataPath.vhd:50]
+INFO: [Synth 8-3491] module 'InstructionMemory' declared at 'C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/InstructionMemory.vhd:27' bound to instance 'instruction_memory' of component 'InstructionMemory' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/MicroMips.vhd:111]
+INFO: [Synth 8-638] synthesizing module 'InstructionMemory' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/InstructionMemory.vhd:36]
+WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/InstructionMemory.vhd:42]
+WARNING: [Synth 8-614] signal 'data' is read in the process but is not in the sensitivity list [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/InstructionMemory.vhd:42]
+WARNING: [Synth 8-614] signal 'address' is read in the process but is not in the sensitivity list [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/InstructionMemory.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'InstructionMemory' (3#1) [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/InstructionMemory.vhd:36]
+INFO: [Synth 8-3491] module 'DataMemory' declared at 'C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:26' bound to instance 'data_memory' of component 'DataMemory' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/MicroMips.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'DataMemory' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:37]
+WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:43]
+WARNING: [Synth 8-614] signal 'mem_read' is read in the process but is not in the sensitivity list [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:43]
+WARNING: [Synth 8-614] signal 'mem_write' is read in the process but is not in the sensitivity list [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:43]
+WARNING: [Synth 8-614] signal 'data' is read in the process but is not in the sensitivity list [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:43]
+WARNING: [Synth 8-614] signal 'address' is read in the process but is not in the sensitivity list [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:43]
+WARNING: [Synth 8-614] signal 'data_in' is read in the process but is not in the sensitivity list [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'DataMemory' (4#1) [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'MicroMips' (5#1) [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/MicroMips.vhd:32]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port clk
+WARNING: [Synth 8-3331] design InstructionMemory has unconnected port clk
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 906.160 ; gain = 257.449
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 906.160 ; gain = 257.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 906.160 ; gain = 257.449
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/constrs_1/new/Nessys4DDR.xdc]
+Finished Parsing XDC File [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/constrs_1/new/Nessys4DDR.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1023.801 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.585 . Memory (MB): peak = 1027.313 ; gain = 3.512
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:28 ; elapsed = 00:00:44 . Memory (MB): peak = 1027.313 ; gain = 378.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:28 ; elapsed = 00:00:44 . Memory (MB): peak = 1027.313 ; gain = 378.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:44 . Memory (MB): peak = 1027.313 ; gain = 378.602
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'estado_atual_reg' in module 'ControlUnit'
+INFO: [Synth 8-5546] ROM "halt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ir_enable" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "drm_enable" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "arm_enable" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "write_reg" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "jump" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pc_inc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "pcr_enable" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "ula_op" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "alur_enable" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "mem_read" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_write" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'halt_reg' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/ControlUnit.vhd:143]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   start |                            00000 |                            00000
+                  sdecod |                            00001 |                            00100
+                   sadd1 |                            00010 |                            01010
+                   sadd2 |                            00011 |                            01011
+                   ssub1 |                            00100 |                            01100
+                   ssub2 |                            00101 |                            01101
+                   sand1 |                            00110 |                            01110
+                   sand2 |                            00111 |                            01111
+                    sor1 |                            01000 |                            10000
+                    sor2 |                            01001 |                            10001
+                   snot1 |                            01010 |                            10010
+                   snot2 |                            01011 |                            10011
+                  sload1 |                            01100 |                            00101
+                  sload2 |                            01101 |                            00110
+                  sload3 |                            01110 |                            00111
+                 sstore1 |                            01111 |                            01000
+                 sstore2 |                            10000 |                            01001
+                 sbusca1 |                            10001 |                            00001
+                     sje |                            10010 |                            10100
+                   sjump |                            10011 |                            10101
+                 sbusca2 |                            10100 |                            00010
+                 sbusca3 |                            10101 |                            00011
+                   shalt |                            10110 |                            10110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'estado_atual_reg' using encoding 'sequential' in module 'ControlUnit'
+WARNING: [Synth 8-327] inferring latch for variable 'ir_enable_reg' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/ControlUnit.vhd:144]
+WARNING: [Synth 8-327] inferring latch for variable 'drm_enable_reg' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/ControlUnit.vhd:145]
+WARNING: [Synth 8-327] inferring latch for variable 'arm_enable_reg' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/ControlUnit.vhd:146]
+WARNING: [Synth 8-327] inferring latch for variable 'write_reg_reg' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/ControlUnit.vhd:147]
+WARNING: [Synth 8-327] inferring latch for variable 'sel_mux_data_reg' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/ControlUnit.vhd:148]
+WARNING: [Synth 8-327] inferring latch for variable 'jump_reg' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/ControlUnit.vhd:149]
+WARNING: [Synth 8-327] inferring latch for variable 'pc_inc_reg' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/ControlUnit.vhd:150]
+WARNING: [Synth 8-327] inferring latch for variable 'pcr_enable_reg' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/ControlUnit.vhd:151]
+WARNING: [Synth 8-327] inferring latch for variable 'alur_enable_reg' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/ControlUnit.vhd:153]
+WARNING: [Synth 8-327] inferring latch for variable 'ula_op_reg' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/ControlUnit.vhd:152]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_read_reg' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/ControlUnit.vhd:154]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_write_reg' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/ControlUnit.vhd:155]
+WARNING: [Synth 8-327] inferring latch for variable 'dr1_out_reg' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataPath.vhd:120]
+WARNING: [Synth 8-327] inferring latch for variable 'dr2_out_reg' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataPath.vhd:125]
+WARNING: [Synth 8-327] inferring latch for variable 'opcode_reg' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataPath.vhd:79]
+WARNING: [Synth 8-327] inferring latch for variable 'instruction_reg' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/InstructionMemory.vhd:45]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[0]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/InstructionMemory.vhd:45]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[1]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/InstructionMemory.vhd:45]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[2]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/InstructionMemory.vhd:45]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[3]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/InstructionMemory.vhd:45]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[4]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/InstructionMemory.vhd:45]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[6]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/InstructionMemory.vhd:45]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[7]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/InstructionMemory.vhd:45]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[8]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/InstructionMemory.vhd:45]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[9]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/InstructionMemory.vhd:45]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[10]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/InstructionMemory.vhd:45]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[11]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/InstructionMemory.vhd:45]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[20]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/InstructionMemory.vhd:45]
+WARNING: [Synth 8-327] inferring latch for variable 'data_out_reg' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[0]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[1]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[2]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[3]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[4]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[5]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[6]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[7]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[8]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[9]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[10]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[11]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[12]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[13]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[14]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[15]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[16]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[17]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[18]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[19]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[20]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[21]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[22]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[23]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[24]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[25]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[26]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[27]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[28]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[29]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[30]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[31]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[32]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[33]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[34]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[35]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[36]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[37]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[38]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[39]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[40]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[41]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[42]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[43]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[44]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[45]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[46]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[47]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[48]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[49]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[50]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[51]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[52]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[53]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[54]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[55]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[56]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[57]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[58]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[59]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[60]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[61]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[62]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[63]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[64]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[65]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[66]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[67]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[68]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[69]' [C:/Xilinx/Projects/MicroMips/MicroMips.srcs/sources_1/new/DataMemory.vhd:47]
+INFO: [Common 17-14] Message 'Synth 8-327' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:38 ; elapsed = 00:00:59 . Memory (MB): peak = 1027.313 ; gain = 378.602
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 6     
+	                8 Bit    Registers := 3     
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	  23 Input      5 Bit        Muxes := 1     
+	  10 Input      5 Bit        Muxes := 1     
+	  23 Input      3 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 1     
+	  23 Input      1 Bit        Muxes := 23    
+	   4 Input      1 Bit        Muxes := 2     
+	  10 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 256   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ControlUnit 
+Detailed RTL Component Info : 
++---Muxes : 
+	  23 Input      5 Bit        Muxes := 1     
+	  10 Input      5 Bit        Muxes := 1     
+	  23 Input      3 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 1     
+	  23 Input      1 Bit        Muxes := 23    
+Module DataPath 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 6     
+	                8 Bit    Registers := 3     
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+	  10 Input      1 Bit        Muxes := 1     
+Module DataMemory 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 256   
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design DataMemory has unconnected port clk
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[20][4]' (LD) to 'instruction_memory/data_reg[20][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[11][4]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[10][4]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[9][4]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[8][4]' (LD) to 'instruction_memory/data_reg[20][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[7][4]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[6][4]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[4][4]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[3][4]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[2][4]' (LD) to 'instruction_memory/data_reg[20][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[1][4]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[0][4]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[20][5]' (LD) to 'instruction_memory/data_reg[20][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[11][5]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[10][5]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[9][5]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[8][5]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[7][5]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[6][5]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[4][5]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[3][5]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[2][5]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[1][5]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[0][5]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[20][6]' (LD) to 'instruction_memory/data_reg[20][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[11][6]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[10][6]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[9][6]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[8][6]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[7][6]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[6][6]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[4][6]' (LD) to 'instruction_memory/data_reg[20][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[3][6]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[2][6]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[1][6]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[0][6]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[20][7]' (LD) to 'instruction_memory/data_reg[20][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[11][7]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[10][7]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[9][7]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[8][7]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[7][7]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[6][7]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[4][7]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[3][7]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[2][7]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[1][7]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[0][7]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[0][8]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[11][8]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[10][8]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[9][8]' (LD) to 'instruction_memory/data_reg[20][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[8][8]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[7][8]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[6][8]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[4][8]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[3][8]' (LD) to 'instruction_memory/data_reg[20][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[2][8]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[20][8]' (LD) to 'instruction_memory/data_reg[20][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[1][8]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[0][9]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[11][9]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[10][9]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[9][9]' (LD) to 'instruction_memory/data_reg[20][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[8][9]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[7][9]' (LD) to 'instruction_memory/data_reg[20][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[6][9]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[4][9]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[3][9]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[2][9]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[20][9]' (LD) to 'instruction_memory/data_reg[20][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[1][9]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[0][10]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[11][10]' (LD) to 'instruction_memory/data_reg[20][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[10][10]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[9][10]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[8][10]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[7][10]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[6][10]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[4][10]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[3][10]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[2][10]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[20][10]' (LD) to 'instruction_memory/data_reg[20][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[1][10]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[0][11]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[11][11]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[10][11]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[9][11]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[8][11]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[7][11]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[6][11]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[4][11]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[3][11]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[2][11]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[20][11]' (LD) to 'instruction_memory/data_reg[20][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[1][11]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[0][12]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[11][12]' (LD) to 'instruction_memory/data_reg[20][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[10][12]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'instruction_memory/data_reg[9][12]' (LD) to 'instruction_memory/data_reg[11][15]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\data_path/plusOp_inferred__0 /\data_path/pc_out_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\instruction_memory/data_reg[10][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\instruction_memory/data_reg[0][3] )
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[247][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[247][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[230][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[230][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[229][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[229][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[227][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[227][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[224][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[224][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[223][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[223][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[220][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[220][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[218][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[218][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[217][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[217][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[214][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[214][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[213][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[213][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[211][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[211][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[208][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[208][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[206][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[206][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[205][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[205][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[203][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[203][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[199][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[199][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[196][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[196][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[194][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[194][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[193][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[193][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[191][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[191][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[176][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[176][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[167][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[167][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[164][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[164][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[162][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[162][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[161][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[161][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[158][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[158][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[157][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[157][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[155][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[155][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[151][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[151][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[148][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[148][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[146][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[146][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[145][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[145][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[143][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[143][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[134][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[134][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[133][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[133][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[131][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[131][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[127][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[127][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[112][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[112][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[103][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[103][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[100][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[100][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[98][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[98][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[97][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[97][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[94][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[94][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[93][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[93][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[91][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[91][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[87][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[87][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[84][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[84][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[82][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[82][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[81][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch data_memory/\data_reg[81][15]  is always disabled
+INFO: [Common 17-14] Message 'Synth 8-264' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (data_path/dr2_out_reg[15]) is unused and will be removed from module MicroMips.
+WARNING: [Synth 8-3332] Sequential element (data_path/dr2_out_reg[14]) is unused and will be removed from module MicroMips.
+WARNING: [Synth 8-3332] Sequential element (data_path/dr2_out_reg[13]) is unused and will be removed from module MicroMips.
+WARNING: [Synth 8-3332] Sequential element (data_path/dr2_out_reg[12]) is unused and will be removed from module MicroMips.
+WARNING: [Synth 8-3332] Sequential element (data_path/dr2_out_reg[11]) is unused and will be removed from module MicroMips.
+WARNING: [Synth 8-3332] Sequential element (data_path/dr2_out_reg[10]) is unused and will be removed from module MicroMips.
+WARNING: [Synth 8-3332] Sequential element (data_path/dr2_out_reg[9]) is unused and will be removed from module MicroMips.
+WARNING: [Synth 8-3332] Sequential element (data_path/dr2_out_reg[8]) is unused and will be removed from module MicroMips.
+WARNING: [Synth 8-3332] Sequential element (data_path/dr2_out_reg[7]) is unused and will be removed from module MicroMips.
+WARNING: [Synth 8-3332] Sequential element (data_path/dr2_out_reg[6]) is unused and will be removed from module MicroMips.
+WARNING: [Synth 8-3332] Sequential element (data_path/dr2_out_reg[5]) is unused and will be removed from module MicroMips.
+WARNING: [Synth 8-3332] Sequential element (data_path/dr2_out_reg[4]) is unused and will be removed from module MicroMips.
+WARNING: [Synth 8-3332] Sequential element (data_path/dr2_out_reg[3]) is unused and will be removed from module MicroMips.
+WARNING: [Synth 8-3332] Sequential element (data_path/dr2_out_reg[2]) is unused and will be removed from module MicroMips.
+WARNING: [Synth 8-3332] Sequential element (data_path/dr2_out_reg[1]) is unused and will be removed from module MicroMips.
+WARNING: [Synth 8-3332] Sequential element (data_path/dr2_out_reg[0]) is unused and will be removed from module MicroMips.
+WARNING: [Synth 8-3332] Sequential element (instruction_memory/instruction_reg[23]) is unused and will be removed from module MicroMips.
+WARNING: [Synth 8-3332] Sequential element (instruction_memory/instruction_reg[22]) is unused and will be removed from module MicroMips.
+WARNING: [Synth 8-3332] Sequential element (instruction_memory/instruction_reg[21]) is unused and will be removed from module MicroMips.
+WARNING: [Synth 8-3332] Sequential element (instruction_memory/instruction_reg[20]) is unused and will be removed from module MicroMips.
+WARNING: [Synth 8-3332] Sequential element (instruction_memory/instruction_reg[19]) is unused and will be removed from module MicroMips.
+WARNING: [Synth 8-3332] Sequential element (instruction_memory/instruction_reg[18]) is unused and will be removed from module MicroMips.
+WARNING: [Synth 8-3332] Sequential element (instruction_memory/instruction_reg[17]) is unused and will be removed from module MicroMips.
+WARNING: [Synth 8-3332] Sequential element (instruction_memory/instruction_reg[16]) is unused and will be removed from module MicroMips.
+WARNING: [Synth 8-3332] Sequential element (instruction_memory/instruction_reg[15]) is unused and will be removed from module MicroMips.
+WARNING: [Synth 8-3332] Sequential element (instruction_memory/instruction_reg[14]) is unused and will be removed from module MicroMips.
+WARNING: [Synth 8-3332] Sequential element (instruction_memory/instruction_reg[13]) is unused and will be removed from module MicroMips.
+WARNING: [Synth 8-3332] Sequential element (instruction_memory/instruction_reg[12]) is unused and will be removed from module MicroMips.
+WARNING: [Synth 8-3332] Sequential element (instruction_memory/instruction_reg[11]) is unused and will be removed from module MicroMips.
+WARNING: [Synth 8-3332] Sequential element (instruction_memory/instruction_reg[10]) is unused and will be removed from module MicroMips.
+WARNING: [Synth 8-3332] Sequential element (instruction_memory/instruction_reg[9]) is unused and will be removed from module MicroMips.
+WARNING: [Synth 8-3332] Sequential element (instruction_memory/instruction_reg[8]) is unused and will be removed from module MicroMips.
+WARNING: [Synth 8-3332] Sequential element (instruction_memory/data_reg[10][3]) is unused and will be removed from module MicroMips.
+WARNING: [Synth 8-3332] Sequential element (instruction_memory/data_reg[0][3]) is unused and will be removed from module MicroMips.
+WARNING: [Synth 8-3332] Sequential element (data_path/dr1_out_reg[15]) is unused and will be removed from module MicroMips.
+WARNING: [Synth 8-3332] Sequential element (data_path/dr1_out_reg[14]) is unused and will be removed from module MicroMips.
+WARNING: [Synth 8-3332] Sequential element (data_path/dr1_out_reg[13]) is unused and will be removed from module MicroMips.
+WARNING: [Synth 8-3332] Sequential element (data_path/dr1_out_reg[12]) is unused and will be removed from module MicroMips.
+WARNING: [Synth 8-3332] Sequential element (data_path/dr1_out_reg[11]) is unused and will be removed from module MicroMips.
+WARNING: [Synth 8-3332] Sequential element (data_path/dr1_out_reg[10]) is unused and will be removed from module MicroMips.
+WARNING: [Synth 8-3332] Sequential element (data_path/dr1_out_reg[9]) is unused and will be removed from module MicroMips.
+WARNING: [Synth 8-3332] Sequential element (data_path/dr1_out_reg[8]) is unused and will be removed from module MicroMips.
+WARNING: [Synth 8-3332] Sequential element (data_path/dr1_out_reg[7]) is unused and will be removed from module MicroMips.
+WARNING: [Synth 8-3332] Sequential element (data_path/dr1_out_reg[6]) is unused and will be removed from module MicroMips.
+WARNING: [Synth 8-3332] Sequential element (data_path/dr1_out_reg[5]) is unused and will be removed from module MicroMips.
+WARNING: [Synth 8-3332] Sequential element (data_path/dr1_out_reg[4]) is unused and will be removed from module MicroMips.
+WARNING: [Synth 8-3332] Sequential element (data_path/dr1_out_reg[3]) is unused and will be removed from module MicroMips.
+WARNING: [Synth 8-3332] Sequential element (data_path/dr1_out_reg[2]) is unused and will be removed from module MicroMips.
+WARNING: [Synth 8-3332] Sequential element (data_path/dr1_out_reg[1]) is unused and will be removed from module MicroMips.
+WARNING: [Synth 8-3332] Sequential element (data_path/dr1_out_reg[0]) is unused and will be removed from module MicroMips.
+WARNING: [Synth 8-3332] Sequential element (data_reg[4][15]) is unused and will be removed from module DataMemory.
+WARNING: [Synth 8-3332] Sequential element (data_reg[4][14]) is unused and will be removed from module DataMemory.
+WARNING: [Synth 8-3332] Sequential element (data_reg[4][13]) is unused and will be removed from module DataMemory.
+WARNING: [Synth 8-3332] Sequential element (data_reg[4][12]) is unused and will be removed from module DataMemory.
+WARNING: [Synth 8-3332] Sequential element (data_reg[4][11]) is unused and will be removed from module DataMemory.
+WARNING: [Synth 8-3332] Sequential element (data_reg[4][10]) is unused and will be removed from module DataMemory.
+WARNING: [Synth 8-3332] Sequential element (data_reg[4][9]) is unused and will be removed from module DataMemory.
+WARNING: [Synth 8-3332] Sequential element (data_reg[4][8]) is unused and will be removed from module DataMemory.
+WARNING: [Synth 8-3332] Sequential element (data_reg[4][7]) is unused and will be removed from module DataMemory.
+WARNING: [Synth 8-3332] Sequential element (data_reg[4][6]) is unused and will be removed from module DataMemory.
+WARNING: [Synth 8-3332] Sequential element (data_reg[4][5]) is unused and will be removed from module DataMemory.
+WARNING: [Synth 8-3332] Sequential element (data_reg[4][4]) is unused and will be removed from module DataMemory.
+WARNING: [Synth 8-3332] Sequential element (data_reg[4][3]) is unused and will be removed from module DataMemory.
+WARNING: [Synth 8-3332] Sequential element (data_reg[4][2]) is unused and will be removed from module DataMemory.
+WARNING: [Synth 8-3332] Sequential element (data_reg[4][1]) is unused and will be removed from module DataMemory.
+WARNING: [Synth 8-3332] Sequential element (data_reg[4][0]) is unused and will be removed from module DataMemory.
+WARNING: [Synth 8-3332] Sequential element (data_reg[5][15]) is unused and will be removed from module DataMemory.
+WARNING: [Synth 8-3332] Sequential element (data_reg[5][14]) is unused and will be removed from module DataMemory.
+WARNING: [Synth 8-3332] Sequential element (data_reg[5][13]) is unused and will be removed from module DataMemory.
+WARNING: [Synth 8-3332] Sequential element (data_reg[5][12]) is unused and will be removed from module DataMemory.
+WARNING: [Synth 8-3332] Sequential element (data_reg[5][11]) is unused and will be removed from module DataMemory.
+WARNING: [Synth 8-3332] Sequential element (data_reg[5][10]) is unused and will be removed from module DataMemory.
+WARNING: [Synth 8-3332] Sequential element (data_reg[5][9]) is unused and will be removed from module DataMemory.
+WARNING: [Synth 8-3332] Sequential element (data_reg[5][8]) is unused and will be removed from module DataMemory.
+WARNING: [Synth 8-3332] Sequential element (data_reg[5][7]) is unused and will be removed from module DataMemory.
+WARNING: [Synth 8-3332] Sequential element (data_reg[5][6]) is unused and will be removed from module DataMemory.
+WARNING: [Synth 8-3332] Sequential element (data_reg[5][5]) is unused and will be removed from module DataMemory.
+WARNING: [Synth 8-3332] Sequential element (data_reg[5][4]) is unused and will be removed from module DataMemory.
+WARNING: [Synth 8-3332] Sequential element (data_reg[5][3]) is unused and will be removed from module DataMemory.
+WARNING: [Synth 8-3332] Sequential element (data_reg[5][2]) is unused and will be removed from module DataMemory.
+WARNING: [Synth 8-3332] Sequential element (data_reg[5][1]) is unused and will be removed from module DataMemory.
+WARNING: [Synth 8-3332] Sequential element (data_reg[5][0]) is unused and will be removed from module DataMemory.
+WARNING: [Synth 8-3332] Sequential element (data_reg[6][15]) is unused and will be removed from module DataMemory.
+WARNING: [Synth 8-3332] Sequential element (data_reg[6][14]) is unused and will be removed from module DataMemory.
+WARNING: [Synth 8-3332] Sequential element (data_reg[6][13]) is unused and will be removed from module DataMemory.
+WARNING: [Synth 8-3332] Sequential element (data_reg[6][12]) is unused and will be removed from module DataMemory.
+WARNING: [Synth 8-3332] Sequential element (data_reg[6][11]) is unused and will be removed from module DataMemory.
+WARNING: [Synth 8-3332] Sequential element (data_reg[6][10]) is unused and will be removed from module DataMemory.
+WARNING: [Synth 8-3332] Sequential element (data_reg[6][9]) is unused and will be removed from module DataMemory.
+WARNING: [Synth 8-3332] Sequential element (data_reg[6][8]) is unused and will be removed from module DataMemory.
+WARNING: [Synth 8-3332] Sequential element (data_reg[6][7]) is unused and will be removed from module DataMemory.
+WARNING: [Synth 8-3332] Sequential element (data_reg[6][6]) is unused and will be removed from module DataMemory.
+WARNING: [Synth 8-3332] Sequential element (data_reg[6][5]) is unused and will be removed from module DataMemory.
+WARNING: [Synth 8-3332] Sequential element (data_reg[6][4]) is unused and will be removed from module DataMemory.
+WARNING: [Synth 8-3332] Sequential element (data_reg[6][3]) is unused and will be removed from module DataMemory.
+WARNING: [Synth 8-3332] Sequential element (data_reg[6][2]) is unused and will be removed from module DataMemory.
+WARNING: [Synth 8-3332] Sequential element (data_reg[6][1]) is unused and will be removed from module DataMemory.
+WARNING: [Synth 8-3332] Sequential element (data_reg[6][0]) is unused and will be removed from module DataMemory.
+WARNING: [Synth 8-3332] Sequential element (data_reg[8][15]) is unused and will be removed from module DataMemory.
+WARNING: [Synth 8-3332] Sequential element (data_reg[8][14]) is unused and will be removed from module DataMemory.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:08 ; elapsed = 00:01:43 . Memory (MB): peak = 1027.313 ; gain = 378.602
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:26 ; elapsed = 00:02:06 . Memory (MB): peak = 1027.313 ; gain = 378.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:26 ; elapsed = 00:02:06 . Memory (MB): peak = 1027.313 ; gain = 378.602
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:27 ; elapsed = 00:02:07 . Memory (MB): peak = 1035.797 ; gain = 387.086
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:32 ; elapsed = 00:02:12 . Memory (MB): peak = 1051.594 ; gain = 402.883
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:32 ; elapsed = 00:02:12 . Memory (MB): peak = 1051.594 ; gain = 402.883
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:32 ; elapsed = 00:02:13 . Memory (MB): peak = 1051.594 ; gain = 402.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:32 ; elapsed = 00:02:13 . Memory (MB): peak = 1051.594 ; gain = 402.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:32 ; elapsed = 00:02:13 . Memory (MB): peak = 1051.594 ; gain = 402.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:32 ; elapsed = 00:02:13 . Memory (MB): peak = 1051.594 ; gain = 402.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |     8|
+|3     |LUT1   |     3|
+|4     |LUT2   |    42|
+|5     |LUT3   |    37|
+|6     |LUT4   |    27|
+|7     |LUT5   |    56|
+|8     |LUT6   |   151|
+|9     |FDCE   |   131|
+|10    |LD     |    46|
+|11    |LDC    |   247|
+|12    |LDP    |     9|
+|13    |IBUF   |     2|
+|14    |OBUF   |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------------+------------------+------+
+|      |Instance             |Module            |Cells |
++------+---------------------+------------------+------+
+|1     |top                  |                  |   762|
+|2     |  control_unit       |ControlUnit       |    83|
+|3     |  data_memory        |DataMemory        |   347|
+|4     |  data_path          |DataPath          |   315|
+|5     |  instruction_memory |InstructionMemory |    12|
++------+---------------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:32 ; elapsed = 00:02:13 . Memory (MB): peak = 1051.594 ; gain = 402.883
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4700 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:12 ; elapsed = 00:02:01 . Memory (MB): peak = 1051.594 ; gain = 281.730
+Synthesis Optimization Complete : Time (s): cpu = 00:01:32 ; elapsed = 00:02:13 . Memory (MB): peak = 1051.594 ; gain = 402.883
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 310 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 11 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1065.965 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 302 instances were transformed.
+  LD => LDCE: 35 instances
+  LD => LDCE (inverted pins: G): 11 instances
+  LDC => LDCE: 247 instances
+  LDP => LDPE: 9 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+146 Infos, 322 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:45 ; elapsed = 00:02:38 . Memory (MB): peak = 1065.965 ; gain = 693.324
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1065.965 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Xilinx/Projects/MicroMips/MicroMips.runs/synth_1/MicroMips.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file MicroMips_utilization_synth.rpt -pb MicroMips_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Nov  6 09:52:57 2019...
