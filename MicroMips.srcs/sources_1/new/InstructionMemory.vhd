@@ -1,6 +1,6 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
+-- Company: UERGS
+-- Engineer: Guilherme Lague
 -- 
 -- Create Date: 17.10.2019 01:21:08
 -- Design Name: 
@@ -25,9 +25,9 @@ library work;
 use work.MicroMipsPkg.all;
 
 entity InstructionMemory is
-    Port ( clk     : in std_logic;
-           rst     : in std_logic;
-           address : in std_logic_vector(7 downto 0); 
+    Port ( clk         : in std_logic;
+           rst         : in std_logic;
+           address     : in std_logic_vector(7 downto 0); 
            instruction : out std_logic_vector(31 downto 0)  
          );
 end InstructionMemory;

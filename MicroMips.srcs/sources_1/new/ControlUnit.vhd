@@ -26,16 +26,16 @@ entity ControlUnit is
     Port ( clk            : in std_logic;             -- clock                           
            rst            : in std_logic;             -- reset                           
            halt           : out STD_LOGIC;            -- sinal de parada para o testbench              
-           opcode         : in decoded_instruction;   -- Codigo da instruï¿½ï¿½o              
+           opcode         : in decoded_instruction;   -- Codigo da instrução             
            zero           : in std_logic;             -- flag de resultado zero na ula              
            ir_enable      : out std_logic;            -- habilitador do IR              
            drm_enable     : out std_logic;            -- habilitador do MDR                               
            arm_enable     : out std_logic;            -- habilitador do MAR
            write_reg      : out std_logic;            -- habilita escrita no registrador        
            sel_mux_data   : out std_logic;            -- seletor do mux de dados
-           sel_mux_to_alu : out std_logic;
-           sel_mux_to_mdr : out std_logic;          
-           jump           : out std_logic;            -- seletor do mux de endereï¿½o          
+           sel_mux_to_alu : out std_logic;            -- seletor do mux de dado para ula
+           sel_mux_to_mdr : out std_logic;            -- seletor do mux de dado para o MDR
+           jump           : out std_logic;            -- seletor do mux de endereço          
            pc_inc         : out std_logic;            -- habilita contagem do pc                
            pcr_enable     : out std_logic;            -- habilitador do PCR   
            alur_enable    : out std_logic;            -- habilitador do ALUR              

@@ -1,2 +1,5 @@
 Vivado Simulator 2019.1
 Time resolution is 1 ps
+Failure: O TestBench terminou normalmente, ignore esta falha!
+Time: 1095 ns  Iteration: 1  Process: /TestBench/testbench_process_main  File: C:/Xilinx/Projects/MicroMips/MicroMips.srcs/mySimulation/new/TestBench.vhd
+$finish called at time : 1095 ns : File "C:/Xilinx/Projects/MicroMips/MicroMips.srcs/mySimulation/new/TestBench.vhd" Line 71

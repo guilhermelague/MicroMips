@@ -32,8 +32,8 @@ entity DataPath is
            arm_enable     : in std_logic;                     -- habilitador do MAR
            write_reg      : in std_logic;                     -- habilita escrita no BankRegister
            sel_mux_data   : in std_logic;                     -- seletor do mux de dados
-           sel_mux_to_alu : in std_logic;
-           sel_mux_to_mdr : in std_logic;
+           sel_mux_to_alu : in std_logic;                     -- seletor do mux de dado para ula
+           sel_mux_to_mdr : in std_logic;                     -- seletor do mux de dado para o MDR
            jump           : in std_logic;                     -- seletor do mux de endereço
            pc_inc         : in std_logic;                     -- habilita contagem do pc
            pcr_enable     : in std_logic;                     -- habilitador do PCR
@@ -58,12 +58,11 @@ architecture Behavioral of DataPath is
     signal dr1_out         : std_logic_vector(15 downto 0);  -- saida 1 do bank register
     signal dr2_out         : std_logic_vector(15 downto 0);  -- saida 2 do bank register
     signal ula_out         : std_logic_vector(15 downto 0);  -- saida da ula
-    signal alur_out         : std_logic_vector(15 downto 0); -- saida do registrador da ula
+    signal alur_out        : std_logic_vector(15 downto 0);  -- saida do registrador da ula
     signal mux_data_out    : std_logic_vector(15 downto 0);  -- saida do mux de dado
     signal mux_addr_im_out : std_logic_vector(7 downto 0);   -- saida do mux de endereço da instruction memory
-   
-    signal mux_to_alu_out  : std_logic_vector(15 downto 0);   -- saida do mux para a entrada da ula -- NEW
-    signal mux_to_mdr_out  : std_logic_vector(15 downto 0);   -- saida do mux para a entrada do mdr -- NEW
+    signal mux_to_alu_out  : std_logic_vector(15 downto 0);  -- saida do mux para a entrada da ula
+    signal mux_to_mdr_out  : std_logic_vector(15 downto 0);  -- saida do mux para a entrada do mdr
 begin
 
 -----------------------------------------------
@@ -90,18 +89,18 @@ opcode <= INOP   when ir_out(3 downto 0) = "0000" else
           ISTORE when ir_out(3 downto 0) = "0111" else
           IJE    when ir_out(3 downto 0) = "1000" else
           IJUMP  when ir_out(3 downto 0) = "1001" else
-          IADDST when ir_out(3 downto 0) = "1010" else --NEW
-          ILDADD when ir_out(3 downto 0) = "1100" else --NEW
+          IADDST when ir_out(3 downto 0) = "1010" else
+          ILDADD when ir_out(3 downto 0) = "1100" else
           IHALT  when ir_out(31 downto 0) = "11111111111111111111111111111111";
           
 -----------------------------------------------
--- MUX to ALU -- NEW
+-- MUX to ALU
 -----------------------------------------------
 mux_to_alu_out <= data_in when sel_mux_to_alu = '1' else
                   dr1_out when sel_mux_to_alu = '0';
 
 -----------------------------------------------
--- MUX to MDR -- NEW
+-- MUX to MDR
 -----------------------------------------------
 mux_to_mdr_out <= dr1_out when sel_mux_to_mdr = '1' else
                  ula_out when sel_mux_to_mdr = '0';         
@@ -153,7 +152,7 @@ begin
         data_out <= (others => '0');	
     elsif (clk'event and clk = '1')then
         if(drm_enable = '1')then
-            data_out <= mux_to_mdr_out; -- NEW
+            data_out <= mux_to_mdr_out;
         end if;
 	end if;
 end process MDR;
@@ -174,7 +173,7 @@ end process MAR;
 
 -----------------------------------------------
 -- ALU - 
------------------------------------------------   -- NEW
+----------------------------------------------- 
 ula_out <= mux_to_alu_out + dr2_out when ula_op = OADD else
            mux_to_alu_out - dr2_out when ula_op = OSUB else
            mux_to_alu_out or dr2_out when ula_op = OOR else

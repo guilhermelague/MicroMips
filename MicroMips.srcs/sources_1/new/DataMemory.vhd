@@ -1,6 +1,6 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
+-- Company: UERGS
+-- Engineer: Guilherme Lague
 -- 
 -- Create Date: 17.10.2019 01:21:08
 -- Design Name: 

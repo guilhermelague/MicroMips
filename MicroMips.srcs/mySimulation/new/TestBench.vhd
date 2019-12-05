@@ -60,12 +60,15 @@ end process;
 
 -------------------------------------------------------
 -- Stimulus process 
+-- espera 500ns e starta o processador setando o rst em '0'.
+-- quando executar uma instrução de halt, o sinal halt será responsavel por encerrar o teste.
 -------------------------------------------------------
 testbench_process_main : process
 begin
 	wait for 500ns;
 	rst <= '0';
-	-- fazer uma condição para parar a simulação em caso de halt
+	wait until (clk'event and clk = '1' and halt = '1');
+	assert false report "O TestBench terminou normalmente, ignore esta falha!" severity failure;
 end process;
 
 end rtl;

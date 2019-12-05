@@ -1,6 +1,6 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
+-- Company: UERGS
+-- Engineer: Guilherme Lague 
 -- 
 -- Create Date: 17.10.2019 01:00:34
 -- Design Name: 
@@ -31,31 +31,27 @@ end MicroMips;
 
 architecture Behavioral of MicroMips is
     
-    signal ir_enable   : std_logic;
-    signal drm_enable  : std_logic;
-    signal arm_enable  : std_logic;
-    signal write_reg   : std_logic;
-    signal sel_mux_data: std_logic;
-    
+    signal ir_enable     : std_logic;
+    signal drm_enable    : std_logic;
+    signal arm_enable    : std_logic;
+    signal write_reg     : std_logic;
+    signal sel_mux_data  : std_logic;
     signal sel_mux_to_alu: std_logic;
     signal sel_mux_to_mdr: std_logic;
-    
-    signal zero        : std_logic;
-    signal jump        : std_logic;
-    signal pc_inc      : std_logic;
-    signal pcr_enable  : std_logic;
-    signal alur_enable : std_logic;
-    signal ula_op      : operation_code;
-    signal mem_read    : std_logic;
-    signal mem_write   : std_logic;
-    signal opcode      : decoded_instruction;
-    signal instruction : std_logic_vector(31 downto 0);
-    
-    signal addr_im : std_logic_vector(7 downto 0);
-    signal addr_dm : std_logic_vector(7 downto 0);
-    
-    signal data_x : std_logic_vector(15 downto 0);
-    signal data_y : std_logic_vector(15 downto 0);
+    signal zero          : std_logic;
+    signal jump          : std_logic;
+    signal pc_inc        : std_logic;
+    signal pcr_enable    : std_logic;
+    signal alur_enable   : std_logic;
+    signal ula_op        : operation_code;
+    signal mem_read      : std_logic;
+    signal mem_write     : std_logic;
+    signal opcode        : decoded_instruction;
+    signal instruction   : std_logic_vector(31 downto 0);
+    signal addr_im       : std_logic_vector(7 downto 0);
+    signal addr_dm       : std_logic_vector(7 downto 0);
+    signal data_x        : std_logic_vector(15 downto 0);
+    signal data_y        : std_logic_vector(15 downto 0);
     
 begin
     -------------------------------------------------------
@@ -64,27 +60,25 @@ begin
     control_unit: ControlUnit
         port map(
             -- ControlUnit => mips
-            clk          => clk,
-            rst          => rst,
-            halt         => halt,
-            opcode       => opcode,
-            ir_enable    => ir_enable,
-            drm_enable   => drm_enable,
-            arm_enable   => arm_enable,
-            write_reg    => write_reg,
-            sel_mux_data => sel_mux_data,
-            
+            clk            => clk,
+            rst            => rst,
+            halt           => halt,
+            opcode         => opcode,
+            ir_enable      => ir_enable,
+            drm_enable     => drm_enable,
+            arm_enable     => arm_enable,
+            write_reg      => write_reg,
+            sel_mux_data   => sel_mux_data,
             sel_mux_to_alu => sel_mux_to_alu,
             sel_mux_to_mdr => sel_mux_to_mdr,
-            
-            jump         => jump,
-            zero         => zero,
-            pc_inc       => pc_inc,
-            pcr_enable    => pcr_enable,
-            alur_enable  => alur_enable,
-            ula_op       => ula_op,
-            mem_read     => mem_read,
-            mem_write    => mem_write   
+            jump           => jump,
+            zero           => zero,
+            pc_inc         => pc_inc,
+            pcr_enable     => pcr_enable,
+            alur_enable    => alur_enable,
+            ula_op         => ula_op,
+            mem_read       => mem_read,
+            mem_write      => mem_write   
         );
     
     -------------------------------------------------------
@@ -100,10 +94,8 @@ begin
             arm_enable     => arm_enable,
             write_reg      => write_reg,
             sel_mux_data   => sel_mux_data,
-            
             sel_mux_to_alu => sel_mux_to_alu,
             sel_mux_to_mdr => sel_mux_to_mdr,
-            
             jump           => jump,
             zero           => zero,
             pc_inc         => pc_inc,
